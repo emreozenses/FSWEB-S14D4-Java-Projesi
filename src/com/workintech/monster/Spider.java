@@ -1,21 +1,21 @@
 package com.workintech.monster;
 
-public class Werewolf extends Monster implements Bleedable{
+public class Spider extends Monster implements Posion {
 
-
-    public Werewolf(String name, int hitPoints, double damage) {
+    public Spider(String name, int hitPoints, double damage) {
         super(name, hitPoints, damage);
     }
 
     @Override
     public double attack() {
-        return getDamage()+bleed();
+        return getDamage() + (getDamage()*poison());
     }
 
     @Override
     public double bleed() {
         return getDamage()*0.25;
     }
-
-
 }
+
+
+

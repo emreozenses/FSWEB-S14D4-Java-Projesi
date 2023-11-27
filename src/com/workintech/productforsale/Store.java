@@ -1,3 +1,5 @@
+package com.workintech.productforsale;
+
 import com.workintech.productforsale.Bread;
 import com.workintech.productforsale.Cake;
 import com.workintech.productforsale.Chocolate;

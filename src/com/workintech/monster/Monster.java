@@ -24,9 +24,7 @@ public abstract class Monster implements Bleedable, Posion{
         return damage;
     }
 
-    public double attack(){
-        return getDamage()+bleed()+poison();
-    }
+    public abstract double attack();
     @Override
     public String toString() {
         return "Monster{" +
