@@ -20,11 +20,12 @@ public class Store {
 
     public static void listProducts(ProductForSale[] products) {
 
-             for (ProductForSale product : products) {
-                 product.showDetails();
-             }
+        for (ProductForSale product : products) {
+            if (product != null) {
+                product.showDetails();
+            }
+        }
+
     }
-
-
 
 }
